@@ -5,3 +5,9 @@ https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-fl
 https://facebook.github.io/react/
 
 https://www.codementor.io/reactjs/tutorial/react-js-flux-architecture-tutorial
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6
+
+http://redux-form.com/6.7.0/examples/wizard/

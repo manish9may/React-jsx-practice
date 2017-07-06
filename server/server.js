@@ -11,13 +11,13 @@ app.use(bodyParser.json());
 
 //The src folder has our static resources (index.html, css, images)
 //app.use(express.static(__dirname + './')); 
-app.use('/', express.static(__dirname + '/../react-routing'));
+app.use('/', express.static(__dirname + '/../react-redux-realworld-example-app'));
 app.use('/node_modules', express.static(__dirname + '/../../node_modules'));
 
 
 // redirect all others to the index (HTML5 history)
 app.all('/*', function(req, res) {
-    res.sendFile('index.html',{root : __dirname + '/../react-routing/'});
+    res.sendFile('index.html',{root : __dirname + '/../react-redux-realworld-example-app/www/'});
 });
 
 app.listen(8084);

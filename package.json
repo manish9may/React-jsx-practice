@@ -7,7 +7,14 @@
     "keymirror": "^0.1.1",
     "react": "^15.5.1",
     "react-dom": "^15.5.1",
+    "prop-types": "^15.5.10",
+    "history": "^4.3.0",
+    "marked": "^0.3.6",
     "react-router": "^3.0.0",
+    "react-redux": "^4.4.8",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.1",
     "uglifyjs": "^2.4.10",
     "underscore": "^1.8.3"
   },
@@ -24,13 +31,20 @@
     "csurf" : "1.8.3",
     "errorhandler" : "1.4.2",
     "express" : "4.13.3",
+    "cross-env": "^4.0.0",
+    "react-scripts": "0.9.5",
     "express-session" : "1.11.3"
   },
-  "main": "react-routing/scripts/app.js",
-  "scripts": {
-    "start": "watchify -o react-routing/scripts/bundle.js -v -d .",
-    "build": "browserify . | uglifyjs -cm > react-routing/scripts/bundle.min.js",
-    "test": "jest"
+  "main": "react-redux-realworld-example-app/scripts/index.js",
+  "scripts" : {
+    "start" : "watchify react-redux-realworld-example-app/www/src/index.jsx -v -t [ babelify --presets [ es2015 react] ] -o react-redux-realworld-example-app/scripts/bundle.js"
+  },
+  "//" : {
+    "scripts": {
+      "start": "watchify -o react-routing/scripts/bundle.js -v -d .",
+      "build": "browserify . | uglifyjs -cm > react-routing/scripts/bundle.min.js",
+      "test": "jest"
+    }
   },
   "browserify": {
     "transform": [
